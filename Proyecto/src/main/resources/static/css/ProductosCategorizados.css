@@ -1,0 +1,26 @@
+body{
+   background-color: 	#800080;
+}
+.titulo{
+    position: relative;
+    right:  550px
+    
+}
+
+.Blusas img   {
+    
+    width: 600px;
+    height: 890px;
+       
+}
+
+.texto{
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left:  260px;
+
+}
+
+
+
