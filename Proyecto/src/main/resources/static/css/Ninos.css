@@ -1,0 +1,86 @@
+body{
+   background-color: 	#800080;
+}
+
+
+.tituloNav{
+    position: relative;
+    right:  550px
+    
+}
+
+.extructuraCarrusel{
+    width: 100vw;
+    height: 100vh;
+    
+    
+}
+.subCarruselb{
+    margin-top: 0.5rem;
+    font-size: 35px;
+    color: #ffffff
+}
+
+
+
+.subCarruselv{
+    margin-top: 0.5rem;
+    font-size: 35px;
+    color: #000000
+
+}
+
+
+
+
+
+
+
+.verMas  {
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #000000;
+    text-decoration: none;
+    font-family: arial;
+    padding: 1px 30px;
+    border : 3px solid #ffffff;
+    border-radius: 20px;
+    
+ 
+}
+
+.verMas:hover{
+    background-color: #ff9999
+}
+
+.fraseb{
+    font-family: Georgia, serif;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.frasev{
+    font-family: Georgia, serif;
+    font-size: 25px;
+    color: #000000;
+}
+
+
+
+.verMasv  {
+    text-transform: uppercase;
+    color: #ff3300;
+    background-color: #000000;
+    text-decoration: none;
+    font-family: arial;
+    padding: 1px 30px;
+    border : 3px solid #ff3300;
+    border-radius: 20px;
+    
+ 
+}
+
+.verMasv:hover{
+    background-color: #ffffff;
+}
+

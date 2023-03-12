@@ -1,0 +1,310 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+    
+}
+
+body{
+    background-color: #990099;
+    font-size: 1.6rem;
+    line-height: 1.5;
+        
+}
+
+p{
+    font-size: 1.8rem;
+    font-family: Georgia, serif;
+    color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1,h2,h3{
+    text-align: center;
+    color: #ffcc00;
+    font-family: Georgia, serif;
+    
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.2rem;
+}
+h2{
+    font-size: 2.4rem;
+}
+
+/** Header **/
+.header{
+    display: flex;
+    justify-content: center; /**alinear horizontalmente **/
+    
+}
+
+.header__logo{
+    margin: 3rem 0;
+}
+
+.footer{
+    background-color: #330033;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footere__texto{
+    
+    font-family: Georgia, serif;
+    text-align: center;
+    font-size: 2.2rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** navegacion **/
+.navegacion{
+    background-color:#330033;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+
+.navegacion__enlace{
+    font-family: Georgia, serif;
+    color: #ffffff;
+    font-size: 3rem;
+    
+}
+.navegacion--activo,
+.navegacion__enlace:hover{
+    color:  #ffcc00;
+}
+
+/** Grid **/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+@media(min-width: 786px){
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+/** Productos **/
+
+.producto{
+    background-color: #330033;
+    padding: 1rem;
+    
+}
+
+.producto__imagen{
+    width: 100%;
+    
+}
+
+.producto__informacion{
+    
+}
+
+.producto__nombre{
+    font-size: 4rem;
+     
+}
+
+.producto__precio{
+    font-size: 2.8rem;
+    color: #ffcc00;
+    
+    
+}
+.producto__nombre,
+.producto__precio{
+    font-family: Georgia, serif;
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2;
+    
+}
+
+
+/** Grafico  **/
+
+.grafico{
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.grafico--camisas{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    background-image: url(../Imagenes/grafico1.jpg)
+    
+}
+
+.grafico--node{
+       background-image: url(../Imagenes/grafico2.jpg);
+       grid-row: 8/9;
+           
+    
+    
+}
+
+@media (min-width: 768px){
+    .grafico--node{
+        grid-row: 5/6;
+        grid-column: 2/4;
+    
+    
+}
+}
+
+
+/** Nosotros  **/
+.nosotros{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        
+    }
+
+@media(min-width: 768px){
+    .nosotros{
+        
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+}
+
+
+
+
+.nosotros__imagen{
+    grid-row:  1/2;.
+    width: 100%;
+    
+}
+
+@media(min-width: 768px){
+    .nosotros__imagen{
+        
+        grid-column: 2/3;
+    }
+}
+
+
+/** Bloques  **/
+
+.bloques{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+@media(min-width: 768px){
+    .bloques{
+    
+    grid-template-columns: repeat(4,1fr);
+    
+}
+}
+
+.bloque{
+    text-align: center;
+}
+.bloque__imagen{
+    width: 100%
+}
+
+.bloque__titulo{
+    margin: 0;
+}
+
+
+/** Pagina del Producto  **/
+
+@media(min-width: 786px){
+    .camisa{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+        
+    }
+}
+
+
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.formulario__campo{
+    border: 1rem solid #330033;
+    background-color: transparent;
+    color: #000000;
+    font-size: 2rem;
+    font-family: Georgia, serif;
+    padding: 1rem;
+    
+        
+    
+}
+
+.formulario__submit{
+    background-color: #ffcc00;
+    border: none;
+    font-size: 2rem;
+    font-family: Georgia, serif;
+    padding: 2rem;
+    transition: background-color 2s ease;
+    transition: font-size 2s ease;
+    grid-column: 1/3;
+    
+}
+
+.formulario__submit:hover{
+    font-size: 2.4rem;
+    cursor: pointer;
+    background-color: #999999;
+}
+
+
+
+

@@ -1,26 +1,158 @@
 body{
    background-color: 	#800080;
 }
-.titulo{
+
+
+
+
+
+
+.tituloNav{
     position: relative;
     right:  550px
     
 }
 
-.Blusas img   {
+.extructuraCarrusel{
+    width: 100vw;
+    height: 100vh;
     
-    width: 600px;
-    height: 890px;
-       
+    
+}
+.subCarruselb{
+    margin-top: 0.5rem;
+    font-size: 35px;
+
 }
 
-.texto{
+.subCarruselb{
+    color: #ffffff
+}
+
+
+.subCarruselv{
+    margin-top: 0.5rem;
+    font-size: 35px;
+
+}
+
+.subCarruselv{
+    color: #000000
+}
+
+
+.subCarruselz{
+    margin-top: 0.5rem;
+    font-size: 35px;
+
+}
+
+.subCarruselz{
+    color: #000000
+}
+
+.subCarruselp{
+    margin-top: 0.5rem;
+    font-size: 35px;
+
+}
+
+.subCarruselp{
+    color: #000000
+}
+
+
+.verMas  {
+    text-transform: uppercase;
     color: #ffffff;
-    position: absolute;
-    top: 50%;
-    left:  260px;
+    background-color: #ffcc00;
+    text-decoration: none;
+    font-family: arial;
+    padding: 1px 30px;
+    border : 3px solid #0099ff;
+    border-radius: 20px;
+    
+ 
+}
 
+.verMas:hover{
+    background-color: #0099ff;
+}
+
+.fraseb{
+    font-family: Georgia, serif;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.frasev{
+    font-family: Georgia, serif;
+    font-size: 25px;
+    color: #000000;
+}
+
+.frasez{
+    font-family: Georgia, serif;
+    font-size: 25px;
+    color: #000000;
+}
+
+.frasep {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    color: #000000;
+}
+
+.verMasv{
+    
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #ffcc00;
+    text-decoration: none;
+    font-family: arial;
+    padding: 1px 30px;
+    border : 3px solid #0099ff;
+    border-radius: 20px;
 }
 
 
+.verMasv:hover{
+    background-color: #006633;
+    
+}
 
+.verMasz{
+    
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #ffcc00;
+    text-decoration: none;
+    font-family: arial;
+    padding: 1px 30px;
+    border : 3px solid #0099ff;
+    border-radius: 20px;
+}
+
+
+.verMasz:hover{
+    background-color: #ffffff;
+    
+}
+
+.verMasp{
+    
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #ffcc00;
+    text-decoration: none;
+    font-family: arial;
+    padding: 1px 30px;
+    border : 3px solid #0099ff;
+    border-radius: 20px;
+}
+
+
+.verMasp:hover{
+    background-color: #996600;
+    
+}
