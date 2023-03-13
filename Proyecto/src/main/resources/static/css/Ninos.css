@@ -1,5 +1,5 @@
 body{
-   background-color: 	#800080;
+   background-color: 	#f8f9fa;
 }
 
 
@@ -9,12 +9,7 @@ body{
     
 }
 
-.extructuraCarrusel{
-    width: 100vw;
-    height: 100vh;
-    
-    
-}
+
 .subCarruselb{
     margin-top: 0.5rem;
     font-size: 35px;

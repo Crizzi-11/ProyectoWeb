@@ -173,6 +173,8 @@ h2{
     
 }
 
+
+
 .grafico--camisas{
     grid-row: 2/3;
     grid-column: 1/3;
@@ -188,14 +190,183 @@ h2{
     
 }
 
+/** Grafico Vestidos  **/
+.graficoV{
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.grafico--vestidos{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    background-image: url(../Imagenes/grafico3.jpg);
+    
+}
+
+.grafico--vestidos2{
+       background-image: url(../Imagenes/grafico4.jpg);
+       grid-row: 8/9;
+           
+    
+    
+}
+
+/** Grafico ZapatosMujer  **/
+.graficoZmujer{
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.grafico--zapatos{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    background-image: url(../Imagenes/grafico5.jpg);
+    
+}
+
+.grafico--zapatos2{
+       background-image: url(../Imagenes/grafico6.jpg);
+       grid-row: 8/9;
+           
+    
+    
+}
+
+/** Grafico PantalonMujer  **/
+.graficoPmujer{
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.grafico--pantalon{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    background-image: url(../Imagenes/grafico7.jpg);
+    
+}
+
+.grafico--pantalon2{
+       background-image: url(../Imagenes/grafico8.jpg);
+       grid-row: 8/9;
+           
+    
+    
+}
+
+/** Grafico CamisaHombre  **/
+.graficoH{
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.grafico--camisasHombre{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    background-image: url(../Imagenes/grafico9.jpg);
+    
+}
+
+.grafico--camisasHombre2{
+       background-image: url(../Imagenes/grafico10.jpg);
+       grid-row: 8/9;
+           
+    
+    
+}
+
+/** Grafico CamisaHombreFormal  **/
+.grafico--camisasHombreF{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    background-image: url(../Imagenes/grafico11.jpg);
+    
+}
+
+.grafico--camisasHombre2F{
+       background-image: url(../Imagenes/grafico12.jpg);
+       grid-row: 8/9;
+           
+}
+
+/** Grafico ZapaotosHombre  **/
+
+.grafico--camisasHombreZ{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    background-image: url(../Imagenes/grafico13.jpg);
+    
+}
+
+.grafico--camisasHombreZ2{
+       background-image: url(../Imagenes/grafico14.jpg);
+       grid-row: 8/9;
+           
+}
+/** GRafico PantalonHombre  **/
+.grafico--camisasHombreP{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    background-image: url(../Imagenes/grafico15.jpg);
+    
+}
+
+.grafico--camisasHombreP2{
+       background-image: url(../Imagenes/grafico16.jpg);
+       grid-row: 8/9;
+           
+}
+/** Grafico RopaNiños  **/
+.grafico--RopaNinos{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    background-image: url(../Imagenes/grafico17.jpg);
+    
+}
+
+.grafico--RopaNinos2{
+       background-image: url(../Imagenes/grafico18.jpg);
+       grid-row: 8/9;
+           
+}
+/** Grafico DisfrazNiños  **/
+.grafico--DisfrazNinos{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    background-image: url(../Imagenes/grafico19.jpg);
+    
+}
+
+.grafico--DisfrazNinos2{
+       background-image: url(../Imagenes/grafico20.jpg);
+       grid-row: 8/9;
+           
+}
+
+
 @media (min-width: 768px){
-    .grafico--node{
+    .grafico--node,.grafico--vestidos2,.grafico--zapatos2,.grafico--pantalon2,
+    .grafico--camisasHombre2,.grafico--camisasHombre2F,.grafico--camisasHombreZ2,
+    .grafico--camisasHombreP2,.grafico--RopaNinos2,.grafico--DisfrazNinos2{
         grid-row: 5/6;
         grid-column: 2/4;
     
     
+    }
 }
-}
+
+
 
 
 /** Nosotros  **/
@@ -217,7 +388,7 @@ h2{
 
 
 .nosotros__imagen{
-    grid-row:  1/2;.
+    grid-row:  1/2;
     width: 100%;
     
 }
@@ -243,7 +414,7 @@ h2{
     
     grid-template-columns: repeat(4,1fr);
     
-}
+    }
 }
 
 .bloque{
@@ -304,6 +475,7 @@ h2{
     cursor: pointer;
     background-color: #999999;
 }
+
 
 
 
