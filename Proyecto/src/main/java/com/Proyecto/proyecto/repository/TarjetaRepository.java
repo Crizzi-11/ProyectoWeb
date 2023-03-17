@@ -4,7 +4,7 @@
  */
 package com.Proyecto.proyecto.repository;
 
-import com.Proyecto.proyecto.entity.DatosTarjeta;
+import com.Proyecto.proyecto.entity.Tarjeta;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
@@ -13,6 +13,6 @@ import org.springframework.stereotype.Repository;
  * @author Cristofer
  */
 @Repository
-public interface DatosTarjetaRepository extends CrudRepository<DatosTarjeta, Long>{
+public interface TarjetaRepository extends CrudRepository<Tarjeta, Long>{
     
 }
