@@ -8,8 +8,14 @@ body{
 
 
 .tituloNav{
-    position: relative;
-    right:  550px
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #000000;
+    text-transform: uppercase;
+    
+    
+    
     
 }
 
