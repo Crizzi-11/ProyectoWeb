@@ -12,49 +12,23 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 body {
 font-family: 'Montserrat', sans-serif;
 overflow-x: hidden;
-background: #3f3f3f;
+background: #fbfafa;
 }
 
-img{
+.img-fluid{
     max-width: 100%;
 }
 
 
-/*------------------Menu---------------------------*/
-
-#menu li > a {
-    font-size: 18px;
-    font-weight: bold;
-    color: #3f3f3f;
-}
-
-#menu button {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/*===================SLIDER DE IMAGENES==========================*/
-
-.carousel-inner {
-    max-height:39rem !important;
-}
-
-/*===================SECCION NUESTRO EQUIPO IMAGEN==========================*/
-
-
-
-#img-equipo{
-    max-height:30rem !important;
-    width:40%;
-}
-
 
 /*=========================CONTACTOS BACKGROUND================================*/
 
+
+
  #seccion-contacto{
-    background-color: #1b2a4e;
+    background-color: #fbfafa;
     min-height:500px;
-    position:relative;
+   
 }
 
 
@@ -62,16 +36,80 @@ img{
 /*=========================CONTACTOS FORMULARIO================================*/
 
 #contenedor-formulario{
-    position:absolute;
-    top:30%;
-    left:50%;
-    transform: translate(-50%, -50%);
+    position:relative;
+    top:10%;
+    left:20%;
+    transform: translate(-50%, -40%);
     background: #fbfafa;
-    border-radius:5px;
-    max-width: 500px;
+    border-radius:10px;
+    max-width: 100px;
+
     
 }
 
 #titulo-formulario {
     color: #3f3f3f;
 }
+
+
+.btn-outline-secondary {
+    background-color: #DDA0DD;
+}
+
+.border-top {
+    background-color: #DDA0DD;
+}
+
+
+
+/*===================SECCION NUESTRO EQUIPO MAPA==========================*/
+#local {
+    margin-top:100px;
+    background-color: #fbfafa;
+    display:flex;
+    justify-content: center; 
+    padding-bottom: 200px; 
+    bottom:100px;
+}
+
+.mapa {
+    background: url(../Imagenes/mapa.png);
+    width:140%;
+    height:500px;
+    top: 90px;
+    left: 40px;
+    right: 30px;
+    position:relative;
+    bottom: 5px;
+}
+
+
+.wrapper-local {
+    width:60%;
+    margin-left:100px;
+    padding-top:150px;
+}
+
+
+/*===========================SECCION de UBICACION==================================*/
+#numeros-local{
+    margin:0 !important;
+    padding:0 !important;
+}
+#numeros-local div {
+    padding: 0 20px 0 0;   
+    text-align:left;
+    height:48px;
+}
+
+#numeros-local div:not(:last-child) {
+    border-right: 2px solid #3f3f3f;
+  }
+#numeros-local div:not(:first-child) {
+    padding-left:20px;
+  }
+
+#numeros-local p{
+    margin:0;
+}
+
