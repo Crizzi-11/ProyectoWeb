@@ -3,17 +3,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.Proyecto.proyecto.repository;
-import com.Proyecto.proyecto.entity.Pais;
+
+import com.Proyecto.proyecto.entity.Recuperacion;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 /**
  *
  * @author Cristofer
-
  */
 @Repository
-public interface PaisRepository extends CrudRepository<Pais,Long >{
-    
+public interface RecuperacionRepository extends CrudRepository<Recuperacion, Long>{
     
 }
