@@ -31,8 +31,8 @@ public class TarjetaService implements ITarjetaService{
     }
     
     @Override
-    public void  saveTarjeta(Tarjeta datosTarjeta){
-    tarjetaRepository.save(datosTarjeta);
+    public void  saveTarjeta(Tarjeta tarjeta){
+    tarjetaRepository.save(tarjeta);
     }
     
     @Override
