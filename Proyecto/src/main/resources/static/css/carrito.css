@@ -1,5 +1,11 @@
 
 /* boton(Carrito)*/
+body{
+    background-color: #426386;
+}
+
+
+
 
 button,
 button::after {

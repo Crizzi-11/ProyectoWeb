@@ -4,18 +4,19 @@
  */
 package com.Proyecto.proyecto.service;
 
-import com.Proyecto.proyecto.entity.Recuperacion;
+import com.Proyecto.proyecto.entity.Pedido;
 import java.util.List;
 
 /**
  *
  * @author Cristofer
  */
-public interface IRecuperacionService {
+public interface IPedidoService {
     
-    public List<Recuperacion> getAllRecuperacion();
-    public Recuperacion getRecuperacionById(long id);
-    public  void saveRecuperacion(Recuperacion recuperacion);
-    public void deleteRecuperacion (long id);
+    public List<Pedido> getAllPedido();
+    public Pedido getPedidoById(long id);
+    public  void savePedido(Pedido pedido);
+    public void deletePedido (long id);
+    
     
 }
