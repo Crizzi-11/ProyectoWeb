@@ -640,3 +640,8 @@ svg:hover {
     position: relative;
     left: 1400px;
 }
+
+.txtC,h2{
+    color: #ffffff;
+    text-decoration: none;
+}
