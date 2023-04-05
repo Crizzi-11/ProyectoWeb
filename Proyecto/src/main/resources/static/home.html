@@ -6,8 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/home.css"/>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </head>
+<body>
+    
+    <!-- se modifico el home -->
+    
+    <header class="BarraPrincipal">
+        
+        
+        
+       
+        <nav class="navbar navbar-expand-lg navbar-light py-4">
+            <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav_lc" aria-controls="nav_lc" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav_lc">
+                    <ul class="navbar-nav my-3 my-lg-0 ms-lg-3 me-auto">
+                        <li class="nav-item me-4"><a class="nav-link" href="home.html"><h2>Tienda Online</h2></a></li>
+                        <li class="nav-item me-4"><a class="nav-link" href="Descuentos.html"><h2>Descuentos</h2></a></li>
+                        <li class="nav-item me-4"><a class="nav-link" href="ProductosCategorizados.html"><h2>Productos Categorizados</h2></a></li>
+                        <li class="nav-item"><a class="nav-link" href="box.html"><h2>Contactanos</h2></a></li>
+                    </ul>
+  </head>
 <body>
     
     <header class="BarraPrincipal">
@@ -28,7 +52,10 @@
                         <li class="nav-item me-4"><a class="nav-link" href="ProductosCategorizados.html"><h2>Productos Categorizados</h2></a></li>
                         <li class="nav-item"><a class="nav-link" href="box.html"><h2>Contactanos</h2></a></li>
                     </ul>
-                    <div><a class="btn btn-outline-secondary me-2" href="#">User</a><a class="btn btn-primary" href="#">Inscribirse</a></div>
+                    <div><a class="btn btn-outline-secondary me-2" href="login.html">Registrarse</a><a class="btn btn-primary" href="LoginAdmin.html">Registrarse Admin</a></div>
+
+                    
+                    
                 </div>
             </div>
         </nav>
@@ -171,7 +198,26 @@
                         <div class="card-body text-center">
                             <h3 class="card-title mb-5" editable="inline">Carrito de Compras</h3>
                             <!-- <h4 class="card-subtitle" editable="inline">Card subtitle</h4> -->
-                            <a class="btn btn-link" href="#" role="button">Ir al Carrito De Compras</a>
+                            <a class="btn btn-link" href="carrito.html" role="button">
+                                
+                                <button class="c-button c-button--gooey"> Hover me
+                                    <div class="c-button__blobs">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </button>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                                <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+                                    <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                                </filter>
+                                </defs>
+                                </svg>
+                                
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -185,21 +231,60 @@
                         <div class="card-body text-center">
                             <h3 class="card-title mb-5" editable="inline">Favoritos</h3>
                             <!-- <h4 class="card-subtitle" editable="inline">Card subtitle</h4> -->
-                            <a class="btn btn-link" href="#" role="button">Ir a Favoritos</a>
+                            <a class="btn btn-link" href="favoritos.html" role="button">
+                                
+                                <button class="c-button c-button--gooey"> Hover me
+                                    <div class="c-button__blobs">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </button>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                                <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+                                    <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                                </filter>
+                                </defs>
+                                </svg>
+                                
+                                
+                            </a>
                         </div>
                     </div>
                 </div>
                 <!-- /lc-block -->
             </div>
             <!-- /col -->
-            <div class="col-md-4">
+            <div class="col-md-4"><!-- parte inferior -->
                 <div class="lc-block">
                     <div class="card shadow-lg p-3 bg-white text-dark">
                         <img class="card-img-top" src="https://images.pexels.com/photos/3837464/pexels-photo-3837464.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Photo by NeONBRAND" loading="lazy">
                         <div class="card-body text-center">
                             <h3 class="card-title mb-5" editable="inline">Blog Moda</h3>
                             <!-- <h4 class="card-subtitle" editable="inline">Card subtitle</h4> -->
-                            <a class="btn btn-link" href="#" role="button">Ir a Blogs de Moda</a>
+                            <a class="btn btn-link" href="#" role="button">
+                                
+                                <button class="c-button c-button--gooey"> Hover me
+                                    <div class="c-button__blobs">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </button>
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                                <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+                                    <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                                </filter>
+                                </defs>
+                                </svg>
+                                
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -4,18 +4,15 @@
  */
 package com.Proyecto.proyecto.service;
 
-import com.Proyecto.proyecto.entity.Recuperacion;
+import com.Proyecto.proyecto.entity.Provincia;
 import java.util.List;
 
 /**
  *
  * @author Cristofer
  */
-public interface IRecuperacionService {
-    
-    public List<Recuperacion> getAllRecuperacion();
-    public Recuperacion getRecuperacionById(long id);
-    public  void saveRecuperacion(Recuperacion recuperacion);
-    public void deleteRecuperacion (long id);
+
+public interface IProvinciaService {
+     public List<Provincia>  listCountry();
     
 }
