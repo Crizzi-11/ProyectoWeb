@@ -1,0 +1,116 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 5 abr 2023, 18:28:05
+    Author     : ricar_t6uqtj3
+*/
+
+
+
+.footer{
+    background-color: #DDA0DD;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footere__texto{
+    
+    font-family: Georgia, serif;
+    text-align: center;
+    font-size: 2.2rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** navegacion **/
+.navegacion{
+    background-color:#ffcccc;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    
+#encabezado{
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 8%;/*altura*/
+   width: 100%;/*ancho*/
+   background-color: blue;
+   color: white;
+   
+
+}
+
+#encabezado h1{
+  display: inline;
+  
+}
+
+   
+}
+#menu a:hover{ /*etiqueta over sirve para mostrar una animacion */
+    background-color: red;
+    color: black;
+}
+
+#barralateral{
+    position: absolute;
+   top: 12%; /*altura*/
+   left: 0;
+   height: 81%;/*altura*/
+   width: 20%;/*ancho*/
+   background-color: #00FFA0;
+   padding:10px;
+    
+}
+#contenido {
+      position: absolute;
+   top: 12%; /*altura*/
+   left: 20%;
+   height: 81%;/*altura*/
+   width: 80%;/*ancho*/
+   background-color: #7901A0;
+   padding:10px;
+   overflow:auto;
+   
+   
+}
+#encabezadotabla{
+    background-color: blue;
+    color: white
+}
+
+#tablaresumen tr:nth-child(odd){ /*Esta etiqueta sirve para acomodar valores pares en tablas*/
+        background-color: coral;
+        color: blue
+    }
+
+#tablaresumen tr:nth-child(even){ /*Esta etiquera sirve para acomdar valores en tablas para valores impares*/
+        background-color: white;
+        color: red
+    }
+
+#piedepagina {
+      position: absolute;
+   bottom: 0%; /*altura*/
+   left: 0%;
+   height: 4%;/*altura*/
+   width: 100%;/*ancho*/
+   background-color: #AABB00;
+   text-align: center;
+   
+}
