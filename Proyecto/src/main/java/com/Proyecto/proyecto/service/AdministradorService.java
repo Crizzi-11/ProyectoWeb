@@ -39,6 +39,11 @@ public class AdministradorService  implements IAdministradorService{
     public void deleteAdministrador(long id){
     administradorRepository.deleteById(id);
     }
+
+    @Override
+    public Administrador findByNombre(String username) {
+        return administradorRepository.findByNombre(username);
+    }
     
     
 }

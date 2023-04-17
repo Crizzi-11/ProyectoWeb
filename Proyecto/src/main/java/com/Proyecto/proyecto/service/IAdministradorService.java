@@ -13,5 +13,7 @@ public interface IAdministradorService {
     public Administrador getAdministradorById(long id);
     public  void saveAdministrador(Administrador administrador);
     public void deleteAdministrador (long id);
+    public Administrador findByNombre (String username);
+    
     
 }

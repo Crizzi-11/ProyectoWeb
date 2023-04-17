@@ -12,5 +12,5 @@ import org.springframework.data.repository.CrudRepository;
  * @author Cristofer
  */
 public interface AdministradorRepository extends CrudRepository<Administrador, Long>{
-    
+    Administrador findByNombre(String nombre);
 }
