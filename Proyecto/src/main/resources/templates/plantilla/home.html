@@ -8,38 +8,58 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="css/home.css"/>
 </head>
-<body>
+<body th:fragment="header">
     
     <!-- se modifico el home -->
+    
+    
+    
+    
+    
+    
+    
 
-    <header  class="BarraPrincipal">
+     <header >
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">HOME</a>
 
-        <nav class="navbar navbar-expand-lg navbar-light py-4">
-            <div class="container-fluid">
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav_lc" aria-controls="nav_lc" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="nav_lc">
-                    <ul class="navbar-nav my-3 my-lg-0 ms-lg-3 me-auto">
-                        <li class="nav-item me-4"><a class="nav-link" href="home.html"><h2>Underground Shop</h2></a></li>
-                        <li class="nav-item me-4"><a class="nav-link" href="Descuentos.html"><h2>Descuentos</h2></a></li>
-                        <li class="nav-item me-4"><a class="nav-link" href="ProductosCategorizados.html"><h2>Productos Categorizados</h2></a></li>
-                         <li class="nav-item me-4"><a class="nav-link" href="/producto"><h2>Inventario de productos</h2></a></li>
-                            <li class="nav-item me-4"><a class="nav-link" href="moda.html"><h2> Blog de moda</h2></a></li>
-                        <li class="nav-item"><a class="nav-link" href="box.html"><h2>Contactanos</h2></a></li>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="Descuentos.html" th:href="@{~/Descuentos.html}"><i class="fa fa-home"></i>Descuentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ProductosCategorizados.html" th:href="@{~/ProductosCategorizados.html}"><i class="fa fa-home"></i>Productos Categorizados</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="moda.html" th:href="@{~/moda.html}"><i class="fa fa-home"></i>Blog de moda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="box.html" th:href="@{~/box.html}"><i class="fa fa-home"></i>Contactanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Inscribirse.html" th:href="@{~/Inscribirse.html}"><i class="fa fa-home"></i>Inscribirse.</a>
+                        </li>
+                        
+                                    
+                        <li sec:authorize="hasRole('ROLE_USER')" class="nav-item">
+                            <a class="nav-link" href="#" th:href="@{~/#}">USER</a>
+                        </li>
+                        <li sec:authorize="hasAnyRole('ROLE_ADMIN','ROLE_MANAGER')" class="nav-item">
+                            <a class="nav-link" href="Admin.html" th:href="@{~/Admin.html}">ADMIN</a>
+                        </li>
+                        
                     </ul>
-                    <div><a class="btn btn-primary" href="Inscribirse.html">Inscribirse</a></div>
-
-                    
-                    
+                    <form class="form-inline my-2 my-lg-0" form-method="post" th:action="@{/logout}">
+                        
+                        <button sec:authorize="isAnonymous()" th:href="@{~/login}" class="btn btn-outline-info my-2 my-sm-0 btn-sm" type="submit">Login</button>
+                    </form>
                 </div>
-            </div>
-        </nav>
-
-
-        
-    </header>
+            </nav>
+        </header>  
     
     
     <!-- Main -->
@@ -242,7 +262,7 @@
                         <div class="card-body text-center">
                             <h3 class="card-title mb-5" editable="inline">Blog Moda</h3>
                             <!-- <h4 class="card-subtitle" editable="inline">Card subtitle</h4> -->
-                            <a class="btn btn-link" href="#" role="button">
+                            <a class="btn btn-link" href="moda.html" role="button">
                                 
                                 <button class="c-button c-button--gooey"> Hover me
                                     <div class="c-button__blobs">
