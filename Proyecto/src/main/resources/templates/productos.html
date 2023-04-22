@@ -29,7 +29,7 @@
                     <td th:text="${user.getArticulo}"></td>
                     <td th:text="${user.getDescripcion}"></td>
                     <td th:text="${user.getPrecio}"></td>
-  
+                    
                     <td th:text="${user.getCategoria.getCategoria}"></td>
                     <td>
                         <a th:href="@{/editArticulo/{id}(id=${user.getId})}">Edit</a>
