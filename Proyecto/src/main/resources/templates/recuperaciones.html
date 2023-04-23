@@ -12,7 +12,7 @@
         <table class="table table-dark table-striped">
             <thead class="thead-dark">
                 <tr>
-                    <th scope="col">CodigoVerificacion</th>
+                    <th scope="col" th:text="#{plantilla.codigo}"></th>
                     <th scope="col">ContraActual</th>
                     <th scope="col">NuevaContra</th>
                     <th scope="col">ConfirmacionContra</th>
@@ -41,8 +41,10 @@
             </th:block>
         </tbody>
     </table>
-        
-        
-        <footer th:replace="plantilla/footer::footer"></footer>
+
+
+    <footer th:replace="plantilla/footer::footer">
+
+    </footer>
 </body>
 </html>
