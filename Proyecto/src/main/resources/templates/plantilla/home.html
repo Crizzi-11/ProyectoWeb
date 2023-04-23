@@ -190,7 +190,7 @@
                         <div class="card shadow-lg p-3 bg-white text-dark">
                             <img class="card-img-top" src="https://images.pexels.com/photos/5632388/pexels-photo-5632388.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Photo by CoinView App" loading="lazy">
                             <div class="card-body text-center">
-                                <h3 class="card-title mb-5" editable="inline">Carrito de Compras</h3>
+                                <h3 class="card-title mb-5" editable="inline"  th:text="#{articulo.boxcarrito}"></h3>
                                 <!-- <h4 class="card-subtitle" editable="inline">Card subtitle</h4> -->
                                 <a class="btn btn-link" href="carrito.html" role="button">
 
@@ -223,7 +223,7 @@
                         <div class="card shadow-lg p-3 bg-white text-dark">
                             <img class="card-img-top" src="https://images.pexels.com/photos/4197491/pexels-photo-4197491.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Photo by Omar Prestwich" loading="lazy">
                             <div class="card-body text-center">
-                                <h3 class="card-title mb-5" editable="inline">Favoritos</h3>
+                                <h3 class="card-title mb-5" editable="inline"  th:text="#{articulo.boxfav}"></h3>
                                 <!-- <h4 class="card-subtitle" editable="inline">Card subtitle</h4> -->
                                 <a class="btn btn-link" href="favoritos.html" role="button">
 
@@ -257,7 +257,7 @@
                         <div class="card shadow-lg p-3 bg-white text-dark">
                             <img class="card-img-top" src="https://images.pexels.com/photos/3837464/pexels-photo-3837464.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Photo by NeONBRAND" loading="lazy">
                             <div class="card-body text-center">
-                                <h3 class="card-title mb-5" editable="inline">Blog Moda</h3>
+                                <h3 class="card-title mb-5" editable="inline"  th:text="#{articulo.boxmoda}"></h3>
                                 <!-- <h4 class="card-subtitle" editable="inline">Card subtitle</h4> -->
                                 <a class="btn btn-link" href="moda.html" role="button">
 
@@ -297,8 +297,8 @@
             <div class="row mb-4">
                 <div class="col-md-12 text-center">
                     <div class="lc-block mb-4">
-                        <h2 editable="inline" class="rfs-25 fw-bolder">Testimonios</h2>  
-                        <p editable="inline"> Tienda de Ropa Online, siempre quiere ayudar.<br> A vestir bien a los usuarios.</p>
+                        <h2 editable="inline" class="rfs-25 fw-bolder"  th:text="#{articulo.testimonios}"></h2>  
+                        <p editable="inline" th:text="#{articulo.testimonios2}"><br></p>
                     </div><!-- /lc-block -->
                 </div>
             </div>
@@ -313,9 +313,8 @@
                                 </div>
                             </div>
                             <div class="lc-block mt-4 text-muted">
-                                <div editable="rich">
-                                    <p>Siempre compro mi ropa aqui, es comodo y muy accesible.
-                                    </p>
+                                <div editable="rich" th:text="#{feedback.cliente1}">
+                                    
                                 </div>
                             </div>
                             <div class="rating mt-3 text-success">
@@ -350,10 +349,7 @@
                                 </div>
                             </div>
                             <div class="lc-block mt-4 text-muted">
-                                <div editable="rich">
-                                    <p>Siempre quise comprar Online, pero me daba miedo que me estafaran, aqui todo es muy seguro y la verdad me encanto
-                                    </p>
-                                </div>
+                                <div editable="rich" th:text="#{feedback.cliente2}"></div>
                             </div>
                             <div class="rating mt-3 text-success">
                                 <div class="lc-block"> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
@@ -387,8 +383,7 @@
                                 </div>
                             </div>
                             <div class="lc-block mt-4 text-muted">
-                                <div editable="rich">
-                                    <p>Me llego antes de tiempo y la ropa esta en perfecto estado, es increible.</p>
+                                <div editable="rich" th:text="#{feedback.cliente3}">
                                 </div>
                             </div>
                             <div class="rating mt-3 text-success">
@@ -425,10 +420,7 @@
                                 </div>
                             </div>
                             <div class="lc-block mt-4 text-muted">
-                                <div editable="rich">
-                                    <p>Nunca había visto precios tan comodos en ropa tan buena.
-                                    </p>
-                                </div>
+                                <div editable="rich" th:text="#{feedback.cliente4}"></div>
                             </div>
                             <div class="rating mt-3 text-success">
                                 <div class="lc-block"> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
@@ -463,10 +455,7 @@
                                 </div>
                             </div>
                             <div class="lc-block mt-4 text-muted">
-                                <div editable="rich">
-                                    <p>Hice mi pedido desde Alemania y me llegó en perfecto estado, gracias!!!!.
-                                    </p>
-                                </div>
+                                <div editable="rich" th:text="#{feedback.cliente5}"></div>
                             </div>
                             <div class="rating mt-3 text-success">
                                 <div class="lc-block"> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
@@ -501,9 +490,7 @@
                                 </div>
                             </div>
                             <div class="lc-block mt-4 text-muted">
-                                <div editable="rich">
-                                    <p>La página es muy facil de usar y la mercancía siempre esta en perfecciones .</p>
-                                </div>
+                                <div editable="rich" th:text="#{feedback.cliente6}"></div>
                             </div>
                             <div class="rating mt-3 text-success">
                                 <div class="lc-block"> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
@@ -543,8 +530,8 @@
                             </div>
 
                             <div class="lc-block small">
-                                <div editable="rich">
-                                    <p>Nuestras tiendas estan diseñadas para comunicar esa visión estética que nos caracteriza, brindándoles una experiencia única de compra en un ambiente donde se sentirán muy a gusto. Ubicación: 125 metros sur de la esquina de Correos de CR,contiguo al Banco Nacional. ¡Visitennos y no se arrepentiran!.</p>
+                                <div editable="rich" th:text="#{footer.text1}">
+                                    
                                 </div>
                             </div>
                             <!-- /lc-block -->
