@@ -42,7 +42,7 @@ public class InscribirController {
         List<Provincia> listaProvincias = provinciaService.listCountry();
         model.addAttribute("inscribirse", new Inscribir());
         model.addAttribute("provincia", listaProvincias);
-        return "crear6";
+        return "crearInscribir";
     }
 
     @GetMapping("/deleteInscribir/{id}")
@@ -63,7 +63,7 @@ public class InscribirController {
         List<Provincia> listaProvincias = provinciaService.listCountry();
         model.addAttribute("inscribirse", inscribir);
         model.addAttribute("provincia", listaProvincias);
-        return "crear6";
+        return "crearInscribir";
     }
     
     

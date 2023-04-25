@@ -39,7 +39,7 @@ public class PedidoController {
         List<Pais> listaPaises = paisService.listCountry();
         model.addAttribute("pedidos", new Pedido());
         model.addAttribute("paises", listaPaises);
-        return "crear4";
+        return "crearPedido";
     }
     
     
@@ -62,7 +62,7 @@ public class PedidoController {
     List<Pais> listaPaises = paisService.listCountry();
     model.addAttribute("pedidos", pedido);
     model.addAttribute("paises", listaPaises);
-    return  "crear4";
+    return  "crearPedido";
     }
     
     

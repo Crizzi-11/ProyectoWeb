@@ -43,7 +43,7 @@ public class AdministradorController {
         List<Provincia> listaProvincias = provinciaService.listCountry();
         model.addAttribute("admins", new Administrador());
         model.addAttribute("provincia", listaProvincias);
-        return "crear5";
+        return "crearAdministrador";
     }
 
     @GetMapping("/deleteAdministrador/{id}")
@@ -64,7 +64,7 @@ public class AdministradorController {
         List<Provincia> listaProvincias = provinciaService.listCountry();
         model.addAttribute("admins", administrador);
         model.addAttribute("provincia", listaProvincias);
-        return "crear5";
+        return "crearAdministrador";
     }
     
 }

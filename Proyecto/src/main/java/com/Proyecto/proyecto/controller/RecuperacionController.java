@@ -40,7 +40,7 @@ public class RecuperacionController {
         List<Correo> listaCorreos = correoService.listCountry();
         model.addAttribute("recuperaciones", new Recuperacion());
         model.addAttribute("correos", listaCorreos);
-        return "crear3";
+        return "crearRecuperacion";
     }
 
     @GetMapping("/deleteRecuperacion/{id}")
@@ -61,7 +61,7 @@ public class RecuperacionController {
         List<Correo> listaCorreos = correoService.listCountry();
         model.addAttribute("recuperaciones", recuperacion);
         model.addAttribute("correos", listaCorreos);
-        return "crear3";
+        return "crearRecuperacion";
     }
     
 }

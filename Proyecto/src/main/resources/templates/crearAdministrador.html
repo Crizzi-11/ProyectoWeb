@@ -1,4 +1,4 @@
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
     <head>
         <title>Bootstrap demo</title>
         <meta charset="UTF-8">
@@ -16,48 +16,48 @@
 
                 <!-- Esto es un formulario -->
                 <div class="container">
-                    <form th:object ="${inscribirse}"
-                          th:action="@{/saveInscribir}"
+                    <form th:object ="${admins}"
+                          th:action="@{/saveAdministrador}"
                           method="POST"
                           >
                        <input type="hidden" th:field="*{id}">
                         <div class="form-group mb-3 row">
-                            <label  class="col-md-2 col-form-label" for="noticia">Quieres Recibir Noticias?</label>                            
+                            <label  class="col-md-2 col-form-label" for="nombre">Nombre</label>                            
                             <div class="col-sm-10">  
-                                <input type="text" class="form-control form-control-sm col-md-6" th:field="*{noticia}"  placeholder= "Noticia" id="noticia" aria-describedby="emailHelp"> 
+                                <input type="text" class="form-control form-control-sm col-md-6" th:field="*{nombre}"  placeholder= "Nombre" id="nombre" aria-describedby="emailHelp"> 
                             </div>
                         </div>
 
                         <div class="form-group mb-3 row">
-                            <label  class="form-control-sm col-md-2 col-form-label" for="descuentos">Quieres informes de Descuentos?</label>                            
+                            <label  class="form-control-sm col-md-2 col-form-label" for="segundo">Segundo</label>                            
                             <div class="col-sm-10">  
-                                <input type="text" th:field="*{descuentos}" class="form-control form-control-sm col-md-6"  placeholder= "Descuentos" id="descuentos" aria-describedby="emailHelp"> 
+                                <input type="text" th:field="*{segundo}" class="form-control form-control-sm col-md-6"  placeholder= "Segundo" id="segundo" aria-describedby="emailHelp"> 
                             </div>
                         </div>
 
                         <div class="form-group mb-3 row">
-                            <label  class="form-control-sm col-md-2 col-form-label" for="ofertas">Quieres informes de Ofertas?</label>                            
+                            <label  class="form-control-sm col-md-2 col-form-label" for="apellido1">Apellido1</label>                            
                             <div class="col-sm-10">  
-                                <input type="text" th:field="*{ofertas}" class="form-control form-control-sm col-md-6"  placeholder= "Ofertas" id="ofertas" aria-describedby="emailHelp"> 
+                                <input type="text" th:field="*{apellido1}" class="form-control form-control-sm col-md-6"  placeholder= "Apellido1" id="apellido1" aria-describedby="emailHelp"> 
                             </div>
                         </div>
 
                         <div class="form-group mb-3 row">
-                            <label  class="form-control-sm col-md-2 col-form-label" for="usuario">Usuario </label>                            
+                            <label  class="form-control-sm col-md-2 col-form-label" for="apellido2">Apellido2 </label>                            
                             <div class="col-sm-10">  
-                                <input type="text" th:field="*{usuario}" class="form-control form-control-sm col-md-6"  placeholder= "Usuario" id="usuario" aria-describedby="emailHelp"> 
+                                <input type="text" th:field="*{apellido2}" class="form-control form-control-sm col-md-6"  placeholder= "Apellido2" id="apellido2" aria-describedby="emailHelp"> 
                             </div>
                         </div>
 
                         <div class="form-group mb-3 row">
-                            <label  class="form-control-sm col-md-2 col-form-label" for="email">Email </label>                            
+                            <label  class="form-control-sm col-md-2 col-form-label" for="labor">Labor </label>                            
                             <div class="col-sm-10">  
-                                <input type="text" th:field="*{email}" class="form-control form-control-sm col-md-6"  placeholder= "Email" id="email" aria-describedby="emailHelp"> 
+                                <input type="text" th:field="*{labor}" class="form-control form-control-sm col-md-6"  placeholder= "Labor" id="labor" aria-describedby="emailHelp"> 
                             </div>
                         </div>
 
                         <div class="form-group mb-3 row">
-                            <label  class="form-control-sm col-form-label col-md-2" for="provincia">  Provincias </label>                            
+                            <label  class="form-control-sm col-form-label col-md-2" for="provincia">  Email </label>                            
                             <div class="col-sm-10">
                                 <select th:field = *{provincia} class="form-control form-control-sm col-md-6" id="provincia" aria-describedby="emailHelp">
                                     <option th:each="x:${provincia}"
@@ -71,6 +71,7 @@
                 </div>
             </div>
         </div>
+        <footer th:replace="plantilla/footer::footer"></footer>
     </body>
 </html>
 

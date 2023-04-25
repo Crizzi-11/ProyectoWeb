@@ -1,5 +1,5 @@
 <html>
-    <head>
+    <head xmlns:th ="https//www.thymeleaf.org">
         <title>Bootstrap demo</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,43 +16,43 @@
 
                 <!-- Esto es un formulario -->
                 <div class="container">
-                    <form th:object ="${recuperaciones}"
-                          th:action="@{/saveRecuperacion}"
+                    <form th:object ="${datos}"
+                          th:action="@{/saveDato}"
                           method="POST"
                           >
                        <input type="hidden" th:field="*{id}">
                         <div class="form-group mb-3 row">
-                            <label  class="col-md-2 col-form-label" for="verificacion">Verificacion</label>                            
+                            <label  class="col-md-2 col-form-label" for="nombre">Nombre</label>                            
                             <div class="col-sm-10">  
-                                <input type="text" class="form-control form-control-sm col-md-6" th:field="*{verificacion}"  placeholder= "Verificacion" id="verificacion" aria-describedby="emailHelp"> 
+                                <input type="text" class="form-control form-control-sm col-md-6" th:field="*{nombre}"  placeholder= "Nombre" id="nombre" aria-describedby="emailHelp"> 
                             </div>
                         </div>
 
                         <div class="form-group mb-3 row">
-                            <label  class="form-control-sm col-md-2 col-form-label" for="contra">Actual</label>                            
+                            <label  class="form-control-sm col-md-2 col-form-label" for="usuario">Usuario</label>                            
                             <div class="col-sm-10">  
-                                <input type="text" th:field="*{contra}" class="form-control form-control-sm col-md-6"  placeholder= "contra" id="Actual" aria-describedby="emailHelp"> 
+                                <input type="text" th:field="*{usuario}" class="form-control form-control-sm col-md-6"  placeholder= "Usuario" id="usuario" aria-describedby="emailHelp"> 
                             </div>
                         </div>
 
                         <div class="form-group mb-3 row">
-                            <label  class="form-control-sm col-md-2 col-form-label" for="nueva">Nueva</label>                            
+                            <label  class="form-control-sm col-md-2 col-form-label" for="email">Email</label>                            
                             <div class="col-sm-10">  
-                                <input type="text" th:field="*{nueva}" class="form-control form-control-sm col-md-6"  placeholder= "Nueva" id="nueva" aria-describedby="emailHelp"> 
+                                <input type="text" th:field="*{email}" class="form-control form-control-sm col-md-6"  placeholder= "Email" id="email" aria-describedby="emailHelp"> 
                             </div>
                         </div>
 
                         <div class="form-group mb-3 row">
-                            <label  class="form-control-sm col-md-2 col-form-label" for="confirmacion">Confirmacion</label>                            
+                            <label  class="form-control-sm col-md-2 col-form-label" for="telefono">Telefono </label>                            
                             <div class="col-sm-10">  
-                                <input type="text" th:field="*{confirmacion}" class="form-control form-control-sm col-md-6"  placeholder= "Confirmacion" id="confirmacion" aria-describedby="emailHelp"> 
+                                <input type="text" th:field="*{telefono}" class="form-control form-control-sm col-md-6"  placeholder= "Telefono" id="telefono" aria-describedby="emailHelp"> 
                             </div>
                         </div>
 
                         <div class="form-group mb-3 row">
-                            <label  class="form-control-sm col-md-2 col-form-label" for="email">CorreoRegistrado</label>                            
+                            <label  class="form-control-sm col-md-2 col-form-label" for="contra">Contraseña </label>                            
                             <div class="col-sm-10">  
-                                <input type="text" th:field="*{email}" class="form-control form-control-sm col-md-6"  placeholder= "CorreoRegistrado" id="email" aria-describedby="emailHelp"> 
+                                <input type="text" th:field="*{contra}" class="form-control form-control-sm col-md-6"  placeholder= "Contraseña" id="contra" aria-describedby="emailHelp"> 
                             </div>
                         </div>
 
@@ -71,6 +71,11 @@
                 </div>
             </div>
         </div>
+        
+        <footer th:replace="plantilla/footer::footer"></footer>
+        
+        
+        
     </body>
 </html>
 

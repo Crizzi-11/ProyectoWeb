@@ -45,7 +45,7 @@ public class DatoController {
         List<Correo> listaCorreos = correoService.listCountry();
         model.addAttribute("datos", new Dato());
         model.addAttribute("correos", listaCorreos);
-        return "crear2";
+        return "crearDato";
     }
 
     @GetMapping("/deleteDato/{id}")
@@ -66,7 +66,7 @@ public class DatoController {
         List<Correo> listaCorreos = correoService.listCountry();
         model.addAttribute("datos", dato);
         model.addAttribute("correos", listaCorreos);
-        return "crear2";
+        return "crearDato";
     }
 
 }

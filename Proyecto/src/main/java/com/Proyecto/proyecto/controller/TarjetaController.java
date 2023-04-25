@@ -44,7 +44,7 @@ public class TarjetaController {
         List<Pais> listaPaises = paisService.listCountry();
         model.addAttribute("tarjetas", new Tarjeta());
         model.addAttribute("paises", listaPaises);
-        return "crear";
+        return "crearTarjeta";
     }
     
     
@@ -67,7 +67,7 @@ public class TarjetaController {
     List<Pais> listaPaises = paisService.listCountry();
     model.addAttribute("tarjetas", tarjeta);
     model.addAttribute("paises", listaPaises);
-    return  "crear";
+    return  "crearTarjeta";
     }
     
     
