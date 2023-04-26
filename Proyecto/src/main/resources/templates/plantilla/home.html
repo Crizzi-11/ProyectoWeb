@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="stylesheet" href="css/home.css"/>
+        
     </head>
     <body th:fragment="header">
 
@@ -35,8 +36,20 @@
                             <a class="nav-link" href="box.html" th:href="@{~/box.html}"><i class="fa fa-home"  th:text="#{plantilla.contactanos}"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Inscribirse.html" th:href="@{~/Inscribirse.html}"><i class="fa fa-home" th:text="#{plantilla.inscribirse}" ></i>.</a>
+                            <a class="nav-link" href="Inscribirse.html" th:href="@{~/Inscribirse.html}"><i class="fa fa-home" th:text="#{plantilla.inscribirse}" ></i></a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Devolucion.html" th:href="@{~/Devolucion.html}"><i class="fa fa-home" th:text="#{plantilla.Devolucion}" ></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Galeria.html" th:href="@{~/Galeria.html}"><i class="fa fa-home" th:text="#{plantilla.Galeria}" ></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Preguntas.html" th:href="@{~/Preguntas.html}"><i class="fa fa-home" th:text="#{plantilla.Preguntas}" ></i></a>
+                        </li>
+                   
+                        
+                        
 
 
                         <li sec:authorize="hasRole('ROLE_USER')" class="nav-item">

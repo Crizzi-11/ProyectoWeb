@@ -1,0 +1,21 @@
+.faq-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.faq {
+  margin-bottom: 30px;
+}
+
+.faq h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.faq p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
