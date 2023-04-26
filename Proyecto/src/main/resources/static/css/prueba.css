@@ -1,0 +1,31 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 23 abr 2023, 20:24:16
+    Author     : ricar_t6uqtj3
+*/
+
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.cart-item img {
+  height: 80px;
+  margin-right: 20px;
+}
+.cart-item h3 {
+  font-size: 24px;
+  margin: 0;
+}
+.cart-item .description {
+  margin: 10px 0;
+}
+.cart-item .price {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}

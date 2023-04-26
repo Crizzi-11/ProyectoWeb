@@ -28,6 +28,7 @@ public class Producto implements Serializable {
     private String articulo;
     private String descripcion;
     private double precio;
+    private String ruta_imagen;
     
       @ManyToOne
     @JoinColumn(name = "categoria_id")
@@ -101,6 +102,20 @@ public class Producto implements Serializable {
      */
     public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
+    }
+
+    /**
+     * @return the ruta_imagen
+     */
+    public String getRuta_imagen() {
+        return ruta_imagen;
+    }
+
+    /**
+     * @param ruta_imagen the ruta_imagen to set
+     */
+    public void setRuta_imagen(String ruta_imagen) {
+        this.ruta_imagen = ruta_imagen;
     }
       
 }
